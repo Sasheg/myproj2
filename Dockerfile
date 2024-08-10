@@ -1,4 +1,4 @@
 FROM ubuntu:22.04
-ENV MY_DIR $MY_DIR
-RUN mkdir /tmp/"$MY_DIR"
+ARG MY_DIR1=$MY_DIR
+RUN mkdir "/tmp/"$MY_DIR1"
 ENTRYPOINT ["ls", "/tmp"]
