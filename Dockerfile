@@ -1,3 +1,3 @@
 FROM alpine:3.14
-RUN mkdir "/tmp/$MY_DIR1"
+RUN mkdir "/tmp/$MYDIR"
 ENTRYPOINT ["ls", "/tmp"]
