@@ -1,3 +1,3 @@
 FROM ubuntu:22.04
-RUN mkdir /tmp/demo
+RUN mkdir /tmp/$MY_DIR
 ENTRYPOINT ["ls", "/tmp"]
