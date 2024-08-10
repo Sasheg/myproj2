@@ -111,6 +111,8 @@ spec:
           - context=.
           - --local
           - dockerfile=.
+          - --opt
+          - build-arg:MYDIR=mytmp2
           - --output
           - type=image,name=docker.io/{{inputs.parameters.image}},push=true
     - name: testrun
