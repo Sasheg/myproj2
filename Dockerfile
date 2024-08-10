@@ -1,4 +1,3 @@
-FROM ubuntu:22.04
-ARG MY_DIR1=$MY_DIR
+FROM alpine:3.14
 RUN mkdir "/tmp/$MY_DIR1"
 ENTRYPOINT ["ls", "/tmp"]
