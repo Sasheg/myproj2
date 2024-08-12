@@ -11,7 +11,7 @@ spec:
       - name: branch
         value: ver2
       - name: image
-        value: sasheg87/myproj2:img2
+        value: sasheg87/myproj2:img22
   entrypoint: main
   volumeClaimTemplates:
     - metadata:
@@ -99,8 +99,6 @@ spec:
             value: --oci-worker-no-process-sandbox
           - name: DOCKER_CONFIG
             value: /.docker
-          - name: MY_DIR
-            value: mytmp2
         command:
           - buildctl-daemonless.sh
         args:
@@ -120,5 +118,5 @@ spec:
         volumeMounts:
           - mountPath: /work
             name: work
-        image: "{{workflow.parameters.image}}"
+        image: sasheg87/myproj2:img22
         workingDir: /work
