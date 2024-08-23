@@ -8,7 +8,7 @@ ARG myextvar2=$listvar2
 RUN echo $myextvar1
 RUN touch /$listvar1
 CMD run.sh hello world $listvar1
-CMD run.sh hello world $listvar1 > /tmp1
-#RUN cat /tmp1
+CMD run.sh hello world $listvar1 >> /tmp1
+RUN cat /tmp1
 
 ENTRYPOINT ["ls", "/tmp"]
