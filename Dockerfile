@@ -10,6 +10,6 @@ RUN touch /$listvar1
 RUN touch /tmp1
 CMD run.sh hello world $listvar1
 CMD run.sh hello world $listvar1 >> tmp1
-CMD cat /tmp1
+CMD cat tmp1
 
 ENTRYPOINT ["ls", "/tmp"]
