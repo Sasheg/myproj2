@@ -5,6 +5,10 @@ RUN mkdir -p /tmp/$MYDIR
 RUN echo $listvar1
 ARG myextvar1=$listvar1
 ARG myextvar2=$listvar2
+ARG myextvar3=$listvar3
+RUN echo "---------------=================---------------"
+RUN echo $listvar1
+RUN echo "---------------=================---------------"
 RUN echo $myextvar1
 RUN touch /$listvar1
 RUN touch /tmp1
