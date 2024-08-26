@@ -8,8 +8,10 @@ ARG myextvar2=$listvar2
 ARG myextvar3=$listvar3
 RUN echo "---------------=================---------------"
 RUN echo $listvar1
+CMD ["echo", "$listvar1"]
 RUN echo "---------------=================---------------"
 RUN echo $myextvar1
+CMD ["echo", "$myextvar1"]
 RUN touch /$listvar1
 RUN touch /tmp1
 RUN ls
@@ -25,4 +27,4 @@ RUN echo "---------------=================---------------"
 #RUN ["cat", "/tmp1"]
 
 #ENTRYPOINT ["ls", "/tmp"]
-ENTRYPOINT ["cat", "tmp1"]
+ENTRYPOINT ["cat", "/tmp1"]
