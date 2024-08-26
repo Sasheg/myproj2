@@ -14,9 +14,10 @@ RUN ls
 
 CMD ["run.sh", "hello", "world", "$listvar1", ">>", "/tmp1"]
 
+RUN echo "---------------=================---------------"
+RUN ls /tmp
+RUN echo "---------------=================---------------"
 
-RUN ls
-
-CMD ["cat", "/tmp1"]
+RUN ["cat", "/tmp1"]
 
 ENTRYPOINT ["ls", "/tmp"]
