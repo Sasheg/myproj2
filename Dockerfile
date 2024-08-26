@@ -12,7 +12,7 @@ RUN ls
 #CMD run.sh hello world $listvar1
 #CMD run.sh hello world $listvar1 >> tmp1
 
-RUN ["run.sh", "hello", "world", "$listvar1", ">>", "/tmp1"]
+CMD ["run.sh", "hello", "world", "$listvar1", ">>", "/tmp1"]
 
 CMD cat tmp1
 
