@@ -21,4 +21,4 @@ RUN echo "---------------=================---------------"
 RUN ["cat", "/tmp1"]
 
 #ENTRYPOINT ["ls", "/tmp"]
-ENTRYPOINT ["cat", "/tmp1"]
+ENTRYPOINT ["cat", "tmp1"]
