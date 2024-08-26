@@ -1,7 +1,7 @@
 FROM alpine:3.14
 ARG MYDIR=$MYDIR
 RUN mkdir -p /tmp/$MYDIR
-
+COPY run.sh .
 RUN echo $listvar1
 ARG myextvar1=$listvar1
 ARG myextvar2=$listvar2
