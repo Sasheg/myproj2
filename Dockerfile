@@ -7,7 +7,7 @@ RUN mkdir -p /tmp/$MYDIR
 
 CMD pwd
 
-COPY ../../shoppath/run.sh .
+COPY run.sh .
 RUN chmod +x run.sh
 
 ARG listvar1=$listvar1
