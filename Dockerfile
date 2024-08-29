@@ -5,7 +5,7 @@ WORKDIR /
 ARG MYDIR=$MYDIR
 RUN mkdir -p /tmp/$MYDIR
 
-COPY /work/shoppath/run.sh .
+COPY /shoppath/run.sh .
 RUN chmod +x run.sh
 
 ARG listvar1=$listvar1
