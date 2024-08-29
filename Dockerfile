@@ -2,6 +2,8 @@ FROM alpine:3.14
 
 WORKDIR /
 
+RUN pwd
+
 ARG MYDIR=$MYDIR
 RUN mkdir -p /tmp/$MYDIR
 
