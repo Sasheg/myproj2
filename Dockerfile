@@ -5,6 +5,8 @@ WORKDIR /
 ARG MYDIR=$MYDIR
 RUN mkdir -p /tmp/$MYDIR
 
+RUN pwd
+
 COPY shoppath/run.sh .
 RUN chmod +x run.sh
 
