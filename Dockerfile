@@ -6,6 +6,7 @@ ARG MYDIR=$MYDIR
 RUN mkdir -p /tmp/$MYDIR
 
 RUN pwd
+RUN ls -l
 
 COPY /shoppath/run.sh .
 RUN chmod +x run.sh
