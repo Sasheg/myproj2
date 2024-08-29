@@ -1,6 +1,6 @@
 FROM alpine:3
 
-#WORKDIR /
+WORKDIR /
 COPY run.sh .
 RUN chmod +x run.sh
 
