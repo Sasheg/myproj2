@@ -2,12 +2,8 @@ FROM alpine:3.14
 
 WORKDIR /
 
-RUN pwd
-
 ARG MYDIR=$MYDIR
 RUN mkdir -p /tmp/$MYDIR
-
-CMD pwd
 
 COPY shoppath/run.sh .
 RUN chmod +x run.sh
